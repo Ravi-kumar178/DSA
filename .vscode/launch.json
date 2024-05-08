@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "e:/DSA/SearchinAndSorting",
-      "program": "e:/DSA/SearchinAndSorting/build/Debug/outDebug",
+      "cwd": "e:/DSA/practice",
+      "program": "e:/DSA/practice/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
