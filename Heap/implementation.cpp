@@ -3,14 +3,17 @@ using namespace std;
 
 void heapify(int *arr, int i, int capacity)
 {
+    int leftChild = 2*i;
+    int rightChild = 2*i+1;
     int largestIndex = i;
-    if ((2 * largestIndex <= capacity) && (arr[2 * largestIndex] > arr[largestIndex]))
+
+    if ((leftChild <= capacity) && (arr[leftChild] > arr[largestIndex]))
     {
-        largestIndex = 2 * largestIndex;
+        largestIndex = leftChild;
     }
-    if ((largestIndex + 1 <= capacity) && (arr[largestIndex + 1] > arr[largestIndex]))
+    if ((rightChild <= capacity) && (arr[rightChild] > arr[largestIndex]))
     {
-        largestIndex += 1;
+        largestIndex = rightChild;
     }
 
     if (largestIndex == i)
